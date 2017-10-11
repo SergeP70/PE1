@@ -29,9 +29,9 @@ namespace B4.PE1.PilleS
             await Navigation.PushAsync(new PictureGallery());
         }
 
-        private void btnWikiPage_Clicked(object sender, EventArgs e)
+        private async void btnWikiPage_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new WikiPage());
         }
     }
 }

@@ -21,10 +21,10 @@ namespace B4.PE1.PilleS
 
             //Label lblCar = image.
             // Create image based on incoming image
-            //                 Aspect = Aspect.AspectFill,
             Image imgCar = new Image {
                 VerticalOptions = LayoutOptions.FillAndExpand,
-                Source= image.Source};
+                Source= image.Source
+            };
             
             Content = new StackLayout
             {
