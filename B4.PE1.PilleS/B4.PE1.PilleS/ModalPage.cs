@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace B4.PE1.PilleS
@@ -11,20 +11,30 @@ namespace B4.PE1.PilleS
 	{
 		public ModalPage ()
 		{
-            Button btnClose = new Button { Text = "Close" };
+        }
+
+        public ModalPage(Image image)
+        {
+            // Create a button:
+            Button btnClose = new Button { Text = "Close"};
             btnClose.Clicked += BtnClose_Clicked;
-            Image imgCar = new Image { Aspect = Aspect.AspectFit };
-            imgCar.Source = ImageSource.FromResource("B4.PE1.PilleS.images.audi.png");
 
-
-            Content = new StackLayout {
-				Children = {
-					new Label { Text = "Welcome to Xamarin Forms!" },
+            //Label lblCar = image.
+            // Create image based on incoming image
+            //                 Aspect = Aspect.AspectFill,
+            Image imgCar = new Image {
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                Source= image.Source};
+            
+            Content = new StackLayout
+            {
+                Children = {
                     imgCar,
                     btnClose
-				}
-			};
-		}
+                }
+            };
+        }
+
 
         private async void BtnClose_Clicked(object sender, EventArgs e)
         {

@@ -19,33 +19,29 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image Grid.Row="0" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
-                       Source="{ext:ImageResource B4.PE1.PilleS.images.audi.png}" >
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
-                    </Image.GestureRecognizers>
-                </Image>
+                <Image x:Name="imgAudi" Grid.Row="0" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                       Source="{ext:ImageResource B4.PE1.PilleS.images.audi.png}" />
                 <Image x:Name="imgAston" Grid.Row="0" Grid.Column="1" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.astonmartin.png}"  />
                 <Image x:Name="imgJaguar" Grid.Row="0" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.jaguar.png}"  />
-                <Image Grid.Row="1" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgMerc" Grid.Row="1" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.mercedes.png}"  />
-                <Image Grid.Row="1" Grid.Column="1" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgHonda" Grid.Row="1" Grid.Column="1" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.honda.png}"  />
                 <Image x:Name="imgBmw" Grid.Row="1" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.bmw.png}"  />
-                <Image Grid.Row="2" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgToyota" Grid.Row="2" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.toyota.png}"  />
-                <Image Grid.Row="2" Grid.Column="1" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgLamborghini" Grid.Row="2" Grid.Column="1" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.lamborghini.png}"  />
-                <Image Grid.Row="2" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgOpel" Grid.Row="2" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.opel.png}"  />
-                <Image Grid.Row="3" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgMazda" Grid.Row="3" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.mazda.png}"  />
-                <Image Grid.Row="3" Grid.Column="1" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgFord" Grid.Row="3" Grid.Column="1" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.ford.png}"  />
-                <Image Grid.Row="3" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgLexus" Grid.Row="3" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.lexus.png}"  />
             </Grid>
         </ScrollView>
