@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:B4.PE1.PilleS"
+             x:Class="B4.PE1.PilleS.MainPage"
+             Style="{StaticResource PlatformPaddedContentPageStyle}">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand">
+            <Label Style="{StaticResource CustomTitleStyle}" Text="Welcome to my First App" 
+                    FontSize="18" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Label x:Name="lblWelcome" Style="{StaticResource CustomCaptionStyle}" Text="Welcome to my First App!" 
+                    VerticalOptions="Center" HorizontalOptions="Center" />
+            <Button x:Name="btnAlertPage" Style="{StaticResource DefaultButtonStyle}" Text="Go to Alert Page"
+                    HeightRequest="50" Clicked="btnAlertPage_Clicked" />
+            <Button x:Name="btnPictureGallery" Style="{StaticResource DefaultButtonStyle}" Text="Picture Gallery"
+                    HeightRequest="50" Clicked="btnPictureGallery_Clicked" />
+            <Button x:Name="btnWikiPage" Style="{StaticResource DefaultButtonStyle}" Text="Wiki Page"
+                    HeightRequest="50" Clicked="btnWikiPage_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

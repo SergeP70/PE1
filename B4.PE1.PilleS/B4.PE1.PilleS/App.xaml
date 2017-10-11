@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="B4.PE1.PilleS.App">
+	<Application.Resources>
+		<!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <!-- Common colors -->
+            <!-- Color x:Key="PageBackgroundColor">#F7CAC9</>
+             Implicit Page Styles (for all pages: no x:Key present) 
+            <Style x:Key="BasePageStyle" TargetType="Page">
+                <Setter Property="BackgroundColor" Value="{StaticResource PageBackgroundColor}" />
+            </Style>
+            <Style x:Key="ContentPageStyle" TargetType="ContentPage"
+                   BasedOn="{StaticResource BasePageStyle}"/> -->
+
+
+            <!-- Reusable OnPlatforms -->
+            <OnPlatform x:Key="PlatformContentPagePadding" x:TypeArguments="Thickness">
+                <On Platform="iOS">5, 20, 5, 5</On>
+                <On Platform="Android">5, 10, 5, 0</On>
+                <On Platform="Windows">5, 10, 5, 0</On>
+            </OnPlatform>
+
+            <!-- Common Colors -->
+            <Color x:Key="PageBackgroundColor">#F7CAC9</Color>
+            <Color x:Key="TitleTextColor">#223A5E</Color>
+            <Color x:Key="NormalTextColor">#5681c2</Color>
+
+            <!-- Implicit Page Styles (for ALL pages, no x:Key present!) -->
+            <Style x:Key="BasePageStyle" TargetType="Page">
+                <Setter Property="BackgroundColor" Value="{StaticResource PageBackgroundColor}" />
+            </Style>
+            <Style x:Key="ContentPageStyle" TargetType="ContentPage" BasedOn="{StaticResource BasePageStyle}" />
+            <Style x:Key="ImagePageStyle" TargetType="ContentPage" >
+                <Setter Property="BackgroundColor" Value="White" />
+            </Style>
+            <Style x:Key="TabbedPageStyle" TargetType="TabbedPage" BasedOn="{StaticResource BasePageStyle}" />
+            <Style x:Key="MasterDetailPageStyle" TargetType="MasterDetailPage" BasedOn="{StaticResource BasePageStyle}" />
+
+            <!-- ContentPage Style -->
+            <Style x:Key="PlatformPaddedContentPageStyle" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{StaticResource PageBackgroundColor}" />
+                <Setter Property="Padding" Value="{StaticResource PlatformContentPagePadding}" />
+            </Style>
+
+            <!-- Title (inherits from built-in TitleStyle -->
+            <Style x:Key="CustomTitleStyle" TargetType="Label" BaseResourceKey="TitleStyle">
+                <Setter Property="TextColor" Value="{StaticResource TitleTextColor}" />
+            </Style>
+            <!-- Caption (inherits from built-in CaptionStyle -->
+            <Style x:Key="CustomCaptionStyle" TargetType="Label" BaseResourceKey="CaptionStyle">
+                <Setter Property="TextColor" Value="{StaticResource TitleTextColor}" />
+            </Style>
+            <!-- Implicit style (applies to ALL Labels) for Body (inherits from built-in BodyStyle) -->
+            <Style TargetType="Label" BaseResourceKey="BodyStyle">
+                <Setter Property="TextColor" Value="{StaticResource NormalTextColor}" />
+            </Style>
+
+            <!-- Default Buttons -->
+            <Color x:Key="DefaultButtonTextColor">#FFFFFF</Color>
+            <Color x:Key="DefaultButtonBackColor">#4F84C4</Color>
+            <Style x:Key="DefaultButtonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="TextColor" Value="{StaticResource DefaultButtonTextColor}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource DefaultButtonBackColor}" />
+                <Setter Property="Margin" Value="10,0,10,0" />
+            </Style>
+
+            <!-- Cancel Buttons -->
+            <Color x:Key="CancelButtonTextColor">#fef3cd</Color>
+            <Color x:Key="CancelButtonBackColor">#f67d15</Color>
+            <Style x:Key="CancelButtonStyle" TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+                <Setter Property="TextColor" Value="{StaticResource CancelButtonTextColor}" />
+                <Setter Property="BackgroundColor" Value="{StaticResource CancelButtonBackColor}" />
+            </Style>
+
+            <!-- Master page Views -->
+            <Color x:Key="MasterPageTextColor">#473e36</Color>
+            <Color x:Key="MasterPageBackgroundColor">#fef3cd</Color>
+            <Style x:Key="MasterPageListView" TargetType="ListView">
+                <Setter Property="BackgroundColor" Value="{StaticResource MasterPageBackgroundColor}" />
+            </Style>
+            <Style x:Key="MasterPageListLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource MasterPageTextColor}" />
+            </Style>
+
+
+
+
+
+        </ResourceDictionary>
+
+	</Application.Resources>
+</Application>
