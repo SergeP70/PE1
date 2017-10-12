@@ -7,7 +7,7 @@
              Style="{StaticResource ImagePageStyle}">
     <ContentPage.Content>
         <ScrollView>
-            <Grid ColumnSpacing="2" RowSpacing="2">
+            <Grid x:Name="gridImages" ColumnSpacing="2" RowSpacing="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="180" />
                     <RowDefinition Height="200" />
@@ -19,29 +19,29 @@
                     <ColumnDefinition Width="*" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
-                <Image x:Name="imgAudi" Grid.Row="0" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgAudi" Grid.Row="0" Grid.Column="0" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.audi.png}" />
-                <Image x:Name="imgAston" Grid.Row="0" Grid.Column="1" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgAston" Grid.Row="0" Grid.Column="1" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.astonmartin.png}"  />
-                <Image x:Name="imgJaguar" Grid.Row="0" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgJaguar" Grid.Row="0" Grid.Column="2" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.jaguar.png}"  />
-                <Image x:Name="imgMerc" Grid.Row="1" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgMerc" Grid.Row="1" Grid.Column="0" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.mercedes.png}"  />
-                <Image x:Name="imgHonda" Grid.Row="1" Grid.Column="1" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgHonda" Grid.Row="1" Grid.Column="1" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.honda.png}"  />
-                <Image x:Name="imgBmw" Grid.Row="1" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgBmw" Grid.Row="1" Grid.Column="2" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.bmw.png}"  />
-                <Image x:Name="imgToyota" Grid.Row="2" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgToyota" Grid.Row="2" Grid.Column="0" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.toyota.png}"  />
-                <Image x:Name="imgLamborghini" Grid.Row="2" Grid.Column="1" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgLamborghini" Grid.Row="2" Grid.Column="1" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.lamborghini.png}"  />
-                <Image x:Name="imgOpel" Grid.Row="2" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgOpel" Grid.Row="2" Grid.Column="2" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.opel.png}"  />
-                <Image x:Name="imgMazda" Grid.Row="3" Grid.Column="0" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgMazda" Grid.Row="3" Grid.Column="0" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.mazda.png}"  />
-                <Image x:Name="imgFord" Grid.Row="3" Grid.Column="1" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgFord" Grid.Row="3" Grid.Column="1" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.ford.png}"  />
-                <Image x:Name="imgLexus" Grid.Row="3" Grid.Column="2" Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center"
+                <Image x:Name="imgLexus" Grid.Row="3" Grid.Column="2" Style="{StaticResource imageStyle}"
                        Source="{ext:ImageResource B4.PE1.PilleS.images.lexus.png}"  />
             </Grid>
         </ScrollView>

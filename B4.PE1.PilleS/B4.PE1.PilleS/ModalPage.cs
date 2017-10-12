@@ -13,26 +13,41 @@ namespace B4.PE1.PilleS
 		{
         }
 
-        public ModalPage(Image image)
+        public ModalPage(Image image, String brand)
         {
+            
             // Create a button:
             Button btnClose = new Button { Text = "Close"};
             btnClose.Clicked += BtnClose_Clicked;
 
-            //Label lblCar = image.
+            // Create a label:
+            Label lblCar = new Label
+            {
+                Text = "It's the logo of " + brand,
+                FontSize = 20,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                IsVisible = true,
+                TextColor = Color.Black
+            };
+            
             // Create image based on incoming image
             Image imgCar = new Image {
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 Source= image.Source
             };
             
+            // All together now:
             Content = new StackLayout
             {
                 Children = {
                     imgCar,
+                    lblCar,
                     btnClose
                 }
             };
+
+            Label z = new Label();
+
         }
 
 

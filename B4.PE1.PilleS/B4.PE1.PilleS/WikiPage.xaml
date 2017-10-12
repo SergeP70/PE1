@@ -7,24 +7,25 @@
              Padding="10"
              Style="{StaticResource PlatformPaddedContentPageStyle}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Style="{StaticResource CustomTitleStyle}" Text="Piramide (ruimtelijke figuur)"
-                   FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
-            <Label Style="{StaticResource CustomCaptionStyle}" Text="Ruimtelijke figuur" 
-                    HorizontalOptions="Center" />
-            <Image x:Name="piramide1" WidthRequest="400" HorizontalOptions="Center"
-                    Source="{ext:ImageResource B4.PE1.PilleS.images.piramide1.png}" />
-            <Label Style="{StaticResource CustomCaptionStyle}" Text="Een vierzijdige piramide met een vierkant als basis" 
-                    HorizontalOptions="Center" />
-            <Image x:Name="piramide2" WidthRequest="400" HorizontalOptions="Center"
-                    Source="{ext:ImageResource B4.PE1.PilleS.images.piramide1.png}" />
-            <Label Style="{StaticResource CustomCaptionStyle}" Text="Een driezijdige piramide met gelijke ribben of tetraëder" 
-                    HorizontalOptions="Center" />
+        <ScrollView>
+            <StackLayout>
+                <Label Style="{StaticResource CustomTitleStyle}" Text="Piramide (ruimtelijke figuur)"
+                       FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label Style="{StaticResource CustomCaptionStyle}" Text="Ruimtelijke figuur" 
+                        HorizontalOptions="Center" />
+                <Image x:Name="piramide1" WidthRequest="300" HorizontalOptions="Center"
+                        Source="{ext:ImageResource B4.PE1.PilleS.images.piramide1.png}" />
+                <Label Style="{StaticResource CustomCaptionStyle}" Text="Een vierzijdige piramide met een vierkant als basis" 
+                        HorizontalOptions="Center" />
+                <Image x:Name="piramide2" WidthRequest="300" HorizontalOptions="Center"
+                        Source="{ext:ImageResource B4.PE1.PilleS.images.piramide2.png}" />
+                <Label Style="{StaticResource CustomCaptionStyle}" Text="Een driezijdige piramide met gelijke ribben of tetraëder" 
+                        HorizontalOptions="Center" />
+                <Label Text="Een piramide is een ruimtelijke figuur bestaande uit een veelhoek, al dan niet regelmatig, als grondvlak en driehoekige zijvlakken vanuit elk van de zijden van de veelhoek naar een gemeenschappelijke punt, de top.
+    Een piramide met een driehoek als basis heet een simplex. Een tetraëder is een simplex met alle zijden gelijk. Een piramide met een vierkant als basis heeft in de architectuur voor veel bouwwerken model gestaan, zie piramide (bouwwerk).
+    De oppervlakte {\displaystyle A} A van een piramide waarvan het grondvlak een vierkant is met {\displaystyle a} a de lengte van de ribbe van de basis en {\displaystyle h} h de hoogte, wis gelijk aan de som van de oppervlakten van het grondvlak en de vier even grote zijvlakken"/>
+            </StackLayout>
 
-
-            <Label Text="Een piramide is een ruimtelijke figuur bestaande uit een veelhoek, al dan niet regelmatig, als grondvlak en driehoekige zijvlakken vanuit elk van de zijden van de veelhoek naar een gemeenschappelijke punt, de top.
-Een piramide met een driehoek als basis heet een simplex. Een tetraëder is een simplex met alle zijden gelijk. Een piramide met een vierkant als basis heeft in de architectuur voor veel bouwwerken model gestaan, zie piramide (bouwwerk).
-De oppervlakte {\displaystyle A} A van een piramide waarvan het grondvlak een vierkant is met {\displaystyle a} a de lengte van de ribbe van de basis en {\displaystyle h} h de hoogte, wis gelijk aan de som van de oppervlakten van het grondvlak en de vier even grote zijvlakken"/>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

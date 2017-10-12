@@ -24,8 +24,9 @@
 
             <!-- Common Colors -->
             <Color x:Key="PageBackgroundColor">#F7CAC9</Color>
-            <Color x:Key="TitleTextColor">#223A5E</Color>
-            <Color x:Key="NormalTextColor">#5681c2</Color>
+            <Color x:Key="TitleTextColor">#223A5E</Color>  <!-- Pantone Navy Peony (dark blue)-->
+            <Color x:Key="NormalTextColor">#223A5E</Color>
+            <Color x:Key="LinkTextColor">#4F84C4</Color>   <!-- Pantone Marina (light blue)-->
 
             <!-- Implicit Page Styles (for ALL pages, no x:Key present!) -->
             <Style x:Key="BasePageStyle" TargetType="Page">
@@ -86,8 +87,13 @@
                 <Setter Property="TextColor" Value="{StaticResource MasterPageTextColor}" />
             </Style>
 
-
-
+            <!-- Images Gallery Views-->
+            <!-- Aspect="AspectFit" VerticalOptions="Center" HorizontalOptions="Center" -->
+            <Style x:Key="imageStyle" TargetType="Image">
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Aspect" Value="AspectFit" />
+            </Style>
 
 
         </ResourceDictionary>
